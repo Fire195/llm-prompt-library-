@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm turbo build --filter=@repo/admin",
+  "buildCommand": "cd ../.. && pnpm turbo build --filter=@repo/admin",
   "outputDirectory": "dist",
   "installCommand": "cd ../.. && pnpm install",
   "framework": "vite"
