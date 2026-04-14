@@ -1,7 +1,18 @@
 import { useState, useEffect } from 'react'
 import { createClient } from '../lib/supabase'
 import type { User } from '@supabase/supabase-js'
-import type { Prompt } from '@repo/types'
+
+type Prompt = {
+  id: string
+  title: string
+  content: string
+  description: string | null
+  category_slug: string | null
+  user_id: string | null
+  is_public: boolean
+  created_at: string
+  updated_at: string
+}
 
 const CATEGORIES = [
   { slug: 'writing', name: '写作' },
